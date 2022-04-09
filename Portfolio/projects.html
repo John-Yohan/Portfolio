@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="eng-US">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PROJECTS | JOHN PARK</title>
+
+        <link href="css/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+<!-------------------Header and Navigation--------------------->
+        <header>
+            <div id="container" class="container">
+                <div class="content">
+                    <span id="navicon" class="navicon" style="font-size:30px;cursor:pointer" onclick="openNav()">> MENU</span>
+                </div>
+                <div id="sidenav" class="navbar">
+                    <a href="index.html">Home</a>
+                    <a id="about" href="index.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <h1>C:\JohnPark></h1>
+            </div>
+        </header>
+
+<!---------------------Javascript----------------------->
+        <script src="js/nav.js"></script>
+
+        <script type="text/javascript">
+
+        window.onload = function(){
+
+            var aboutJump = document.getElementById("about");
+
+            aboutJump.onclick = function() {
+                function scrollAbout() {
+                    window.scroll({
+                    top: 600,
+                    behavior: 'smooth'
+                    })
+                }
+
+                scrollabout();
+                return false;
+            }
+        }
+        </script>
+
+<!--------------------Page Content------------------>
+
+        <section id="projects-page">
+            <div class="container">
+                <div id="content" class="content">
+                        <div id="project-heading" class="top-content">
+                            <script src="js/typeprojects.js"></script>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-2">
+                                <h2>Figurine</h2>
+                                <p>I designed the logo for Figurine; a company that manufactures test dolls, better known as "Crash Dummies."</p>
+                            </div>
+                            <div class="col-2">
+                                <img src="img/project-figurine.PNG" alt="Thumbnail of finished project slide" width="70%">
+                            </div>
+                            <div class="col-2">
+                                <p>My goal was to design a logo that was simple, unique, impactful (pun-intended),and most importantly, memorable. I knew right away that I wanted to design my logo with the silhouette of a doll in mind. The problem was adhering to the aforementioned qualities that I wanted to achieve while still working around my initial inspiration.</p>
+                                <p>The following are sketches in which I first brainstormed words describing the company and their products. I then moved on to playing around with rough typefonts, and anatomy that I can model my logo on.</p>
+                            </div>
+                            <div class="col-2">
+                                <img src="img/project-draft-1.jpg" alt="Sketches of potential logo and typefont ideas" width="70%"> 
+                            </div>
+                            <div class="col-2">
+                                <p>After some consideration regarding dimensions and scaling, I decided to work with the profile of a human head. I decided that the head is a recognizable figure that can be efficiently resized on many different formats, and can be unique if designed effectively.</p>
+                                <p>Using a template profile as a reference, I reshaped the silhouette I had until it was more robotic and emotionless in caricature. I was satisfied with the result and shifted towards finding a suitable typeface for the logo.</p>
+                            </div>
+                            <div class="col-2">
+                                <img src="img/project-draft-2.PNG" alt="Reference and reshaped human head profiles" width="70%">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+
+    <footer>
+        <section id="footer" class="footer">
+            <p>Designed by John Park 2022. All Rights Reserved.</p>
+        </section>
+    </footer>
+
+</html>

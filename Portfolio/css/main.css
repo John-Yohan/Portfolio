@@ -1,0 +1,262 @@
+* {
+    font-family: 'Inconsolata', monospace;
+    color: hotpink;
+    background-color: black;
+}
+
+/*--------------------------Structure---------------------------*/
+.container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.container-open h1 {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 12vw;
+    transition: 0.5s;
+}
+
+.container-open-pro h1 {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 12vw;
+    transition: 0.5s;
+}
+
+.container h1 {
+    color: white;
+    font-size: 7rem;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 2rem;
+    transition: 0.5s;
+    max-width: 90vw;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    font-size: 2rem;
+}
+
+.col-2 img {
+    padding-left: 5rem;
+}
+
+/*----------------------Page Content--------------------*/
+
+.content {
+    transition: margin-left .5s;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.content-open {
+    margin-left: 12vw;
+}
+
+.content-open-pro {
+    margin-left: 12vw;
+}
+
+.top-content {
+    font-size: 6em;
+    padding-bottom: 1em;
+}
+
+.top-content br {
+    line-height: 2em;
+}
+
+.about {
+    display: none;
+}
+
+.about p {
+    font-size: 2em;
+    transition: 2s;
+    width: 80vw;
+}
+
+.about em {
+    color: aqua;
+    font-style: normal;
+}
+
+.about a {
+    color: lime;
+    font-style: normal;
+}
+
+.about a:hover {
+    color: green;
+}
+
+.projects h2 {
+    font-size: 2em;
+    color: limegreen;
+}
+
+.project-heading {
+    font-size: 3rem;
+}
+
+.contact p {
+    font-size: 2rem;
+}
+
+.contact a {
+    color: lime;
+    font-style: normal;
+}
+
+.contact a:hover{
+    color: green;
+}
+
+.footer{
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 0.5rem;
+    transition: 0.5s;
+}
+
+.footer-open{
+    margin-left: 13vw;
+    transition: 0.5s;
+}
+
+/*--------------------Navigation Bar--------------------*/
+
+.navbar {
+    height: 100vh;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    padding-top: 6rem;
+    transition: 0.5s;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.navbar-open {
+    width: 12vw;
+}
+
+.navbar-open-pro {
+    width: 12vw;
+}
+
+.navbar a {
+    background-color: transparent;
+    color: hotpink;
+    float: left;
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    margin-left: 1em;
+    margin-right: 2em;
+    margin-top: 2em;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+.navicon {
+    top: 0;
+    background-color: transparent;
+    color: lime;
+    transition: 0.5s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;    
+  }
+  
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.navicon-open {
+    margin-left: 12vw;
+}
+
+.navicon:hover {
+    color: green;
+    transition: 0.3s;
+}
+
+/*--------------------Media Queries----------------------*/
+
+@media screen and (max-width: 650px) {
+
+    .navbar {
+        width: 100vw;
+        height: auto;
+        position: relative;
+        top: 0;
+        padding-top: 0;
+        padding-bottom: 2rem;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin-top: 0;
+        margin-right: 1rem;
+        font-size: 2rem;
+    }
+
+    .navicon {
+        display: none;
+    }
+
+    .container h1 {
+        font-size: 4rem;
+    }
+
+    .top-content {
+        font-size: 3rem;
+    }
+
+    .about p {
+        width: 90vw;
+    }
+
+    .col-2 {
+        position: relative;
+        flex-basis: 100%;
+      }
+
+}
+
+@media screen and (max-width: 450px) {
+    
+    .navbar a {
+        float: none;
+        text-align: center;
+    }
+    
+    .about p {
+        position: relative;
+        flex-basis: 100%;
+    }
+
+}
